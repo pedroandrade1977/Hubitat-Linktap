@@ -11,8 +11,8 @@ Installation:
 1. Create both drivers (Linktap Controller and Linktap Taplinker) by copying and pasting driver code into Hubitat
 2. Add virtual device and set type Linktap Controller
 3. Enter your username and apiKey in preferences
-4. If you intend to use the web hook for receiving data from linktap cloud servers, you need to enter your public static IP on "IP/DNS for Web Hook" and the IP of Linktap server in "MAC / IP Address". For me this has been "34.192.218.92", but it may vary and change over time. In Hubitat logs you may see received messages which have not been routed to a device for parsing, and this will indicate the IP that you should enter in this property.
-5. If you are using the web hook, each tap linker will be identified and created as a child device automatically
+4. If you intend to use the web hook for receiving data from linktap cloud servers, you need to enter your public static IP or domain on "IP/DNS for Web Hook" and the IP of Linktap server in "MAC / IP Address". For me this has been "34.192.218.92", but it may vary and change over time. In Hubitat logs you may see received messages which have not been routed to a device for parsing, and this will indicate the IP that you should enter in this property.
+5. If you are using the web hook, each tap linker will be identified and created as a child device automatically when the first message is received. I suggest you turn off the tap linker and turn it back on after one minute or so
 6. If you are not using the web hook, you can create each tap linker by pressing the add taplinker command in the Controller device, providing the gateway Id, tap linker Id (you find these in the back of each device) and a label 
 
 Using:
