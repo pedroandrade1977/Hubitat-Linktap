@@ -16,7 +16,7 @@
  * Some code was taken from Ecowitt WiFi Gateway Driver by Simon Burke (Original author Mirco Caramori - github.com/mircolino)
  *
  *	Updates:
- *	Date: 2021-12-29	v1.0 Initial release
+ *	Date: 2021-12-29	v0.1 Beta release
  */
 
 import java.text.DecimalFormat
