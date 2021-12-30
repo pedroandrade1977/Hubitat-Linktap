@@ -17,6 +17,7 @@
  *
  *	Updates:
  *	Date: 2021-12-29	v0.1 Beta release
+ *	Date: 2021-12-30	v0.2 Small bug fix
  */
 
 import java.text.DecimalFormat
@@ -373,11 +374,11 @@ private updateWebHook() {
 
         if ((settings.webHook?:"")=="") {
           // delete existing webhook
-          sendCommand(apiDeleteWebHook(),[]);
+          sendCommand("deleteWebHookUrl",[]);
           sendEvent(name: "webHook", value: "NONE");
         } else {
           // set new webhook
-          sendCommand(apiSetWebHook(),["http://${settings.webHook}:39501/data"]);
+          sendCommand("setWebHookUrl",["http://${settings.webHook}:39501/data"]);
           // Save the new webHook as an attribute for later comparison
           sendEvent(name: "webHook", value: settings?.webHook);
         }
