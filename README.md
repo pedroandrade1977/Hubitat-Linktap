@@ -1,5 +1,5 @@
 # Hubitat-Linktap
-Driver for Linktap Taplinker automatic watering system
+Driver for Linktap Taplinker automatic watering system using cloud API
 
 Pre-requisites:
 1. You need your username and an apiKey from linktap. The apiKey can be obtained at https://www.link-tap.com/#!/api-for-developers by using your linktap credentials.
